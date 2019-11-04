@@ -6,7 +6,7 @@
 #include "xodr_map.h"
 #include "../test_config.h"
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 TEST(LaneMaterialTest, testParseLaneMaterial)
 {
@@ -93,4 +93,4 @@ TEST(LaneRuleTest, testParseLaneRule)
     EXPECT_EQ(rule.value(), "no stopping at any time");
 }
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

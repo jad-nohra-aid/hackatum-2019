@@ -3,7 +3,7 @@
 #include "xml/xml_attribute_parsers.h"
 #include "xml/xml_child_element_parsers.h"
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 class Junction::AttribParsers : public XmlAttributeParsers<XodrParseResult<Junction>>
 {
@@ -114,4 +114,4 @@ XodrParseResult<Junction::LaneLink> Junction::LaneLink::parseXml(XodrReader& xml
     return ret;
 }
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

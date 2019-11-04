@@ -5,7 +5,7 @@
 
 #include <gtest/gtest.h>
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 TEST(ParseRoadObject, testParseWidthLength)
 {
@@ -225,4 +225,4 @@ TEST(ParseRoadObject, testParseFullDocOutline)
     xodrMap.validate();
 }
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

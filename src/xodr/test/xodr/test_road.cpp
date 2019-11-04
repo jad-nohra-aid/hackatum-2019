@@ -5,6 +5,6 @@
 #include "../test_config.h"
 #include "xodr_map.h"
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

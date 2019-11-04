@@ -1,6 +1,6 @@
 #pragma once
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 /**
  * @brief A cubic polynomial.
@@ -185,4 +185,4 @@ class Poly3
     double d_;
 };
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

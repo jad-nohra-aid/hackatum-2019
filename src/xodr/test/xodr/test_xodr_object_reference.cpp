@@ -2,7 +2,7 @@
 
 #include <gtest/gtest.h>
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 TEST(XodrObjectReferenceTest, testParse)
 {
@@ -66,4 +66,4 @@ TEST(XodrObjectReference, testHasNullValue)
     EXPECT_FALSE(ref.hasValue());
 }
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

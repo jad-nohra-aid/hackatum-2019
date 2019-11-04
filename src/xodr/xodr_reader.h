@@ -9,7 +9,7 @@
 
 #include <boost/variant.hpp>
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 /**
  * Bitmasks of possible XODR violations that we may want to distinguish to deal with partially correct XODR files.
@@ -220,4 +220,4 @@ struct IdToIndexMaps
     std::map<std::string, int> junctionIdToIndex_;
 };
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

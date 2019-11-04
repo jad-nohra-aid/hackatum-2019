@@ -2,7 +2,7 @@
 
 #include <gtest/gtest.h>
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 TEST(ParseRoadLinkTest, testParseRoadLink)
 {
@@ -158,4 +158,4 @@ TEST(ParseRoadLinkTest, testParseMultipleRightNeighbors)
     EXPECT_FALSE(RoadLinks::parseXml(xml).hasValidConnectivity());
 }
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

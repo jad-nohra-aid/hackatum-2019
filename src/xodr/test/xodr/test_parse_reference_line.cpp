@@ -4,7 +4,7 @@
 
 #include "xml/xml_reader.h"
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 TEST(ParseReferenceLineTest, testParseEmptyPlanView)
 {
@@ -226,4 +226,4 @@ TEST(ParseReferenceLineTest, testParseParamPoly3DefaultToNormalized)
     EXPECT_EQ(paramPoly3.pRange(), ReferenceLine::PRange::NORMALIZED);
 }
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

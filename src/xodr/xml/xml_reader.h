@@ -5,7 +5,7 @@
 
 #include "tinyxml.h"
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 /**
  * @brief An XmlReader is a stream based xml parser.
@@ -215,4 +215,4 @@ class XmlReader
     bool endOfElement_;
 };
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

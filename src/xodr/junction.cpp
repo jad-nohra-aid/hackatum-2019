@@ -2,7 +2,7 @@
 
 #include <climits>
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 bool Junction::hasConnection(int incomingRoadIdx, int connectingRoadIdx, ContactPoint contactPoint) const
 {
@@ -105,4 +105,4 @@ void Junction::Connection::test_setLaneLinkTarget(LaneID fromLaneId, LaneIDOpt t
     }
 }
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

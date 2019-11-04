@@ -5,7 +5,7 @@
 #include "xodr_map.h"
 #include "validation/road_link_validation.h"
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 /**
  * @brief Validates whether 'toLaneId' is in the required range.
@@ -603,4 +603,4 @@ std::string LaneLinkOpposingDirections::description(const XodrMap& map) const
     return desc.str();
 }
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

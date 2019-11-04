@@ -6,7 +6,7 @@ extern "C" {
 #include "odrSpiral/odrSpiral.h"
 }
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 static const double NUM_VERTICES_PER_METER = 1;
 
@@ -697,4 +697,4 @@ ReferenceLine::Vertex ReferenceLine::ParamPoly3::endVertex() const
     return ret;
 }
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

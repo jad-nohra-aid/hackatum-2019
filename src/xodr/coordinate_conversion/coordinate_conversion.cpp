@@ -4,7 +4,7 @@
 #include <cassert>
 #include <proj.h>
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 void CoordinateConversion::init(const std::string& fromProjStr, const std::string& toProjStr)
 {
@@ -85,4 +85,4 @@ void CoordinateConversion::convert(std::vector<Eigen::Vector2d>& points) const
     convert(points.data(), static_cast<int>(points.size()));
 }
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

@@ -2,7 +2,7 @@
 
 #include <gtest/gtest.h>
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 TEST(CoordinateConversionTest, testConvert)
 {
@@ -83,4 +83,4 @@ TEST(CoordinateConversionTest, testConvertArrayWithStriding)
     }
 }
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

@@ -6,7 +6,7 @@
 #include "xodr_reader.h"
 #include "poly3.h"
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 class TestFactory;
 
@@ -922,4 +922,4 @@ class ReferenceLine
     Vertex endVertex_;
 };
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

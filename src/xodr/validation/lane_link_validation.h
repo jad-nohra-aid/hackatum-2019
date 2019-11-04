@@ -6,7 +6,7 @@
 #include "xodr_map_keys.h"
 #include "junction.h"
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 class XodrMap;
 class LaneSection;
@@ -305,4 +305,4 @@ class LaneLinkOpposingDirections : public LaneLinkValidationError
     LaneID bLaneId_;
 };
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

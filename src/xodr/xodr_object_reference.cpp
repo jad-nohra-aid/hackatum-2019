@@ -3,7 +3,7 @@
 #include <cassert>
 #include <sstream>
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 XodrParseResult<XodrObjectReference> XodrObjectReference::parse(const std::string& txt)
 {
@@ -66,4 +66,4 @@ void XodrObjectReference::resolve(const std::map<std::string, int>& idToIndex, c
     }
 }
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

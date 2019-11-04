@@ -5,7 +5,7 @@
 #include "xodr_validation/road_width_validation.h"
 #include "xodr/xodr_map.h"
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 static const std::string VALIDATE_ROAD_GEOMETRY_BASE_PATH =
     std::string(TEST_DATA_PATH_PREFIX) + "xodr/test_road_width_validation/";
@@ -204,4 +204,4 @@ TEST(RoadWidthValidationTest, testValidateNSUv4)
     }
 }
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

@@ -4,7 +4,7 @@
 
 #include "../test_config.h"
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 static int sign(double d)
 {
@@ -133,4 +133,4 @@ TEST(GeneratedCurvaturePolynomialsTest, testParamPoly3InflectionPoints)
     }
 }
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

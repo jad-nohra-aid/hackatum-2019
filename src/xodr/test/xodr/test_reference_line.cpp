@@ -2,7 +2,7 @@
 
 #include <gtest/gtest.h>
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 class TestFactory
 {
@@ -464,4 +464,4 @@ TEST(ReferenceLineTest, testEvalParamPoly3NormalizedCurvature)
     EXPECT_NEAR(paramPoly3.evalCurvature(25), -0.82875, 0.0001);
 }
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

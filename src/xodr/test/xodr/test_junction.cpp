@@ -5,7 +5,7 @@
 #include "xodr_map.h"
 #include "../test_config.h"
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 TEST(JunctionTest, testConnectionFindLinkTarget)
 {
@@ -26,4 +26,4 @@ TEST(JunctionTest, testConnectionFindLinkTarget)
     EXPECT_EQ(connection.findLaneLinkTarget(LaneID(-1000)), LaneIDOpt::null());
 }
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

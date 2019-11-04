@@ -5,7 +5,7 @@
 #include <cmath>
 #include <functional>
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 namespace {
 
@@ -90,4 +90,4 @@ Poly3 Poly3::scale(double factor) const
     return result;
 }
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

@@ -2,7 +2,7 @@
 
 #include <gtest/gtest.h>
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 TEST(RoadTest, testParseRoad)
 {
@@ -81,4 +81,4 @@ TEST(RoadTest, testParseRoad)
     EXPECT_EQ(rightWidthPoly.poly3(), Poly3(9, 10, 11, 12));
 }
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

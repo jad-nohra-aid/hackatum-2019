@@ -3,7 +3,7 @@
 #include "xodr_validation/polynomial.h"
 
 #include "../test_config.h"
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 TEST(PolynomialTest, testAddPolynomials)
 {
@@ -88,4 +88,4 @@ TEST(PolynomialTest, testHasRootsInInterval)
     Polynomial c({0, 0, 1});
     EXPECT_TRUE(c.hasRootsInInterval(-0.01, 0.01));
 }
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

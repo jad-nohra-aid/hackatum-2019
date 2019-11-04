@@ -7,7 +7,7 @@
 #include "xml_parse_result.h"
 #include "xml_reader.h"
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 namespace xml_parsers {
 /**
@@ -335,6 +335,6 @@ class XmlChildElementParsers
     std::vector<Parser> parsers_;
 };
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr
 
 #include "xml_child_element_parsers_impl.h"

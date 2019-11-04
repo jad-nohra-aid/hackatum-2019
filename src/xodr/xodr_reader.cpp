@@ -1,6 +1,6 @@
 #include "xodr_reader.h"
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 namespace {
 class XodrParseErrorDescriptionVisitor : public boost::static_visitor<std::string>
@@ -30,4 +30,4 @@ XodrReader XodrReader::fromText(const std::string& text)
     ret.initFromText(text);
     return ret;
 }
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

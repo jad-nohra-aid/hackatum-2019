@@ -3,7 +3,7 @@
 #include "xml/xml_attribute_parsers.h"
 #include "xml/xml_child_element_parsers.h"
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 namespace xml_parsers {
 
@@ -228,4 +228,4 @@ void RoadLinks::resolveReferences(const IdToIndexMaps& idToIndexMaps)
     rightNeighbor_.resolveReferences(idToIndexMaps);
 }
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

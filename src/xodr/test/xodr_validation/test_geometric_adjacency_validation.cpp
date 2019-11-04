@@ -5,7 +5,7 @@
 #include "xodr/xodr_map.h"
 #include "../test_config.h"
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 TEST(TestGeometricAdjacencyValidation, testSimpleSuccess)
 {
@@ -172,4 +172,4 @@ TEST(TestGeometricAdjacencyValidation, testOpposingDirectionsFailure)
     EXPECT_EQ(error.onLeftBoundary_, false);
 }
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

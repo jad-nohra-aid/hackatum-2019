@@ -5,7 +5,7 @@
 #include <vector>
 #include <iostream>
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 /**
  * @brief An error that could appear while parsing an XML document.
@@ -139,4 +139,4 @@ class XmlParseResult
 
     std::vector<E> errors_;
 };
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

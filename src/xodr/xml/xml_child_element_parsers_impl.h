@@ -1,7 +1,7 @@
 #include <sstream>
 #include <algorithm>
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 template <class XmlReaderT, class T>
 void XmlChildElementParsers<XmlReaderT, T>::parse(XmlReaderT& xml, T& result) const
@@ -334,4 +334,4 @@ void XmlChildElementParsers<XmlReaderT, T>::parseOneOrMore(XmlReaderT& xml, T& r
     }
 }
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

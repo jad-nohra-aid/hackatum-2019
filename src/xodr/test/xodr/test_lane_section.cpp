@@ -5,7 +5,7 @@
 #include "reference_line.h"
 #include "validation/lane_link_validation.h"
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 class LaneSectionTest : public testing::Test
 {
@@ -375,4 +375,4 @@ INSTANTIATE_TEST_CASE_P(Rule, ValidateLaneAttribSOffsetTest,
                                                         "  <rule sOffset='%f' value='I would turn back if I were you'/>"
                                                         "</lane>"));
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

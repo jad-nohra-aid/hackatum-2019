@@ -6,7 +6,7 @@
 #include "xml_parse_result.h"
 #include "xml_reader.h"
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 namespace xml_parsers {
 /**
  * @brief The function which is used to parse attribute values into objects
@@ -240,6 +240,6 @@ class XmlAttributeParsers
     std::vector<Parser> parsers_;
 };
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr
 
 #include "xml_attribute_parsers_impl.h"

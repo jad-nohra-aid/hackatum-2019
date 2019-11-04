@@ -11,7 +11,7 @@ typedef struct projCtx_t PJ_CONTEXT;
 struct PJconsts;
 typedef struct PJconsts PJ;
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 /**
  * @brief A coordinate conversion from map coordinates using one projection to
@@ -74,4 +74,4 @@ class CoordinateConversion
     PJ* toProj_ = nullptr;
 };
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

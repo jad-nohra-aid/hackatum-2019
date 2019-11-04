@@ -9,7 +9,7 @@
 #include "lane_id.h"
 #include "lane_attributes.h"
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 class Road;
 
@@ -651,4 +651,4 @@ enum class LaneType : int
     HOV
 };
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

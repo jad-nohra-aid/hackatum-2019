@@ -4,7 +4,7 @@
 #include "xodr_object_reference.h"
 #include "xml/xml_attribute_parsers.h"
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 enum class RoadLinkType
 {
@@ -382,4 +382,4 @@ class RoadLinks
     NeighborLink rightNeighbor_;
 };
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

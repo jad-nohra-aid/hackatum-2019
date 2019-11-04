@@ -4,7 +4,7 @@
 #include "xml/xml_attribute_parsers.h"
 #include "xml/xml_child_element_parsers.h"
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 class RoadObjectOutline::ChildElemParsers
     : public XmlChildElementParsers<XodrReader, XodrParseResult<RoadObjectOutline>>
@@ -94,4 +94,4 @@ XodrParseResult<RoadObjectOutline::CornerLocal> RoadObjectOutline::CornerLocal::
     return ret;
 }
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

@@ -6,7 +6,7 @@
 #include "road.h"
 #include "junction.h"
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 class LaneSection;
 
@@ -205,4 +205,4 @@ class XodrMap
     int totalNumLanes_;
 };
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

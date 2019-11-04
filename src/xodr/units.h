@@ -3,7 +3,7 @@
 #include "xml/xml_attribute_parsers.h"
 #include "xodr_reader.h"
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 enum class DistanceUnit
 {
@@ -42,4 +42,4 @@ MassUnit parseXmlAttrib(const std::string& value);
 
 }  // namespace xml_parsers
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

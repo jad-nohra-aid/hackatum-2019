@@ -5,7 +5,7 @@
 #include <climits>
 #include <cassert>
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 class LaneID;
 class LaneIDOpt;
@@ -284,4 +284,4 @@ class LaneIDOpt
     int id_;
 };
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

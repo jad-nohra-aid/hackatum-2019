@@ -4,7 +4,7 @@
 
 #include "xodr_reader.h"
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 TEST(ParseJunctionTest, testParseJunction)
 {
@@ -60,4 +60,4 @@ TEST(ParseJunctionTest, testParseJunction)
     }
 }
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

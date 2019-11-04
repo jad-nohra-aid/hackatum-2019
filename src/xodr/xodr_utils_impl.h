@@ -1,6 +1,6 @@
 #pragma once
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 template <class F>
 void forEachRoadLink(const XodrMap& map, F&& f)
@@ -103,4 +103,4 @@ void forEachRoadLink(const XodrMap& map, RoadRoadF&& roadRoadF, JunctionRoadF&& 
     }
 }
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

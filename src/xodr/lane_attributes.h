@@ -5,7 +5,7 @@
 #include "xodr_reader.h"
 #include "units.h"
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 /**
  * @brief The material of (a cross-section of) a lane.
@@ -300,4 +300,4 @@ class LaneRule
     std::string value_;
 };
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

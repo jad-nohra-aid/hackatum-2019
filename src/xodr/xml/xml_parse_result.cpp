@@ -2,7 +2,7 @@
 
 #include <sstream>
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 std::string XmlParseError::description() const
 {
@@ -31,4 +31,4 @@ std::string XmlParseError::description() const
     return message.str();
 }
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

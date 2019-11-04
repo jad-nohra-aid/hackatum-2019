@@ -9,7 +9,7 @@
 #include "road_link.h"
 #include "road_object.h"
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 /**
  * @brief A road in an xodr map.
@@ -283,4 +283,4 @@ class Road
     RoadLinks links_;
 };
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

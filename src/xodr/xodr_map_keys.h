@@ -2,7 +2,7 @@
 
 #include "road_link.h"
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 class XodrMap;
 class LaneSection;
@@ -313,4 +313,4 @@ struct JunctionLaneLinkKey
     int laneLinkIdx_;
 };
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

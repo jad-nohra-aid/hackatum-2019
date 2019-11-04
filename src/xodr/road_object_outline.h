@@ -4,7 +4,7 @@
 
 #include "xodr_reader.h"
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 /**
  * @brief A RoadObjectOutline is an object which describes custom geometry for
@@ -145,4 +145,4 @@ class RoadObjectOutline
     std::vector<Corner> corners_;
 };
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

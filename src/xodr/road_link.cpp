@@ -1,6 +1,6 @@
 #include "road_link.h"
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 std::string roadLinkTypeName(RoadLinkType roadLinkType)
 {
@@ -126,4 +126,4 @@ const XodrObjectReference& NeighborLink::elementRef() const
     return elementRef_;
 }
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

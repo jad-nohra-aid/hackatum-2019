@@ -3,7 +3,7 @@
 #include <cmath>
 #include <climits>
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 LaneSection::Lane::Lane() : predecessor_(LaneIDOpt::null()), successor_(LaneIDOpt::null()) {}
 
@@ -380,4 +380,4 @@ double LaneSection::Lane::widthAtSCoord(const double s) const
     return poly.poly3().eval(param);
 }
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

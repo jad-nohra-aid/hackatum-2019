@@ -7,7 +7,7 @@
 #include "xodr_reader.h"
 #include "road_object_outline.h"
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 /**
  * @brief The RoadObject class is used to describes objects (like poles,
@@ -258,4 +258,4 @@ class RoadObject
     double roll_;
 };
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

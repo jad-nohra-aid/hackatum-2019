@@ -5,7 +5,7 @@
 #include <map>
 #include <string>
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 /**
  * @brief An XodrObjectReference is a reference from one object to another
@@ -115,4 +115,4 @@ class XodrObjectReference
     int index_ = INVALID_VALUE;
 };
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

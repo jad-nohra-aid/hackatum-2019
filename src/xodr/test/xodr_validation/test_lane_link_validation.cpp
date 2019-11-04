@@ -5,7 +5,7 @@
 #include "xodr/xodr_map.h"
 #include "../test_config.h"
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 static const std::string VALIDATE_LINKS_BASE_PATH = std::string(TEST_DATA_PATH_PREFIX) + "xodr/test_link_validation/";
 static const std::string VALIDATE_LINKS_XODR_PATH = VALIDATE_LINKS_BASE_PATH + "validate_links.xodr";
@@ -486,4 +486,4 @@ TEST(LaneLinkValidationTest, testLinkToCenterLineJunctionIncoming)
     }
 }
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

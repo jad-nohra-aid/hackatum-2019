@@ -1,6 +1,6 @@
 #include "units.h"
 
-namespace aid { namespace sim { namespace xodr { namespace xml_parsers {
+namespace aid { namespace xodr { namespace xml_parsers {
 
 template <>
 DistanceUnit parseXmlAttrib(const std::string& value)
@@ -71,4 +71,4 @@ MassUnit parseXmlAttrib(const std::string& value)
     }
 }
 
-}}}}  // namespace aid::sim::xodr::xml_parsers
+}}}  // namespace aid::xodr::xml_parsers

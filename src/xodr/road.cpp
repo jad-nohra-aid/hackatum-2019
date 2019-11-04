@@ -1,6 +1,6 @@
 #include "road.h"
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 const ElevationProfile& Road::elevationProfile() const
 {
@@ -86,4 +86,4 @@ void Road::validate() const
     }
 }
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

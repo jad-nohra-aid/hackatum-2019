@@ -3,7 +3,7 @@
 #include "xml/xml_child_element_parsers.h"
 #include "xml/xml_attribute_parsers.h"
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 class Road::AttribParsers : public XmlAttributeParsers<XodrParseResult<Road>>
 {
@@ -149,4 +149,4 @@ int Road::globalLaneIndicesEnd() const
     return laneSections_.back().lanes().back().globalIndex() + 1;
 }
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

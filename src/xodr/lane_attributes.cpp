@@ -2,7 +2,7 @@
 #include "xml/xml_attribute_parsers.h"
 #include "units.h"
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 class LaneMaterial::AttribParsers : public XmlAttributeParsers<XodrParseResult<LaneMaterial>>
 {
@@ -149,4 +149,4 @@ XodrParseResult<LaneRule> LaneRule::parseXml(XodrReader& xml)
     return ret;
 }
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

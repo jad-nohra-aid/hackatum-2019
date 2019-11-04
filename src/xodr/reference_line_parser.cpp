@@ -3,10 +3,9 @@
 #include "xml/xml_attribute_parsers.h"
 #include "xml/xml_child_element_parsers.h"
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 namespace xml_parsers {
-using namespace aid::sim::xodr;
 
 template <>
 ReferenceLine::PRange parseXmlAttrib<ReferenceLine::PRange>(const std::string& value)
@@ -258,4 +257,4 @@ XodrParseResult<ReferenceLine::ParamPoly3> ReferenceLine::ParamPoly3::parseXml(c
     return paramPoly3;
 }
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

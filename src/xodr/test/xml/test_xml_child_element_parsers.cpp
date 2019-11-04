@@ -2,7 +2,7 @@
 
 #include <gtest/gtest.h>
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 struct ChildElem
 {
@@ -110,4 +110,4 @@ TEST(XmlChildElementParsersTest, testParseOneChild_TooMany)
     EXPECT_EQ(obj.errors().at(0).value_, "a");
 }
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

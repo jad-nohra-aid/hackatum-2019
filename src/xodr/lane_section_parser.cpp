@@ -3,7 +3,7 @@
 #include "xml/xml_attribute_parsers.h"
 #include "xml/xml_child_element_parsers.h"
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 namespace xml_parsers {
 
 template <>
@@ -339,4 +339,4 @@ XodrParseResult<LaneSection::WidthPoly3> LaneSection::WidthPoly3::parseXml(XodrR
     return ret;
 }
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

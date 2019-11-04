@@ -6,7 +6,7 @@
 #include "validation/link_validation_base.h"
 #include "xodr_map_keys.h"
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 class XodrMap;
 class LaneSection;
@@ -240,4 +240,4 @@ class InconsistentJunctionPathDirectionsError : public RoadLinkValidationError
     int bToAJunctionIdx_;
 };
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

@@ -2,7 +2,7 @@
 
 #include <gtest/gtest.h>
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 TEST(XmlAttributeParsersTest, testFieldParsers)
 {
@@ -217,4 +217,4 @@ TEST(XmlAttributeParsersTest, testOptionalSetterParserAttribMissing)
     EXPECT_EQ(result.value().a_, 100);
 }
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

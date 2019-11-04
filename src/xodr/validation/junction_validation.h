@@ -1,6 +1,6 @@
 #pragma once
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 class XodrMap;
 
@@ -17,4 +17,4 @@ class XodrMap;
  */
 void validateJunctionMembership(const XodrMap& map);
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

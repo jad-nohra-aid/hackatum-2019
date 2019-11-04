@@ -1,7 +1,7 @@
 #include <sstream>
 #include <algorithm>
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 namespace xml_parsers {
 template <class T>
@@ -253,4 +253,4 @@ void XmlAttributeParsers<T>::finalize()
     }
 }
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

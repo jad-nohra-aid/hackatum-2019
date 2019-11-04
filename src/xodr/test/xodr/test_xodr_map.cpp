@@ -4,7 +4,7 @@
 
 #include "../test_config.h"
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 TEST(XodrMapTest, testParseGeoReference)
 {
@@ -151,4 +151,4 @@ TEST(XodrMapTest, testGlobalLaneIndex)
     EXPECT_EQ(xodrMap.totalNumLanes(), expectedGlobalIndex);
 }
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

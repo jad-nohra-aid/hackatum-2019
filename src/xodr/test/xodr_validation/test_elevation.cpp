@@ -3,7 +3,7 @@
 
 #include <gtest/gtest.h>
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 TEST(ElevationProfileTest, testParse)
 {
@@ -359,4 +359,4 @@ TEST(ElevationTest, testValidateMaxSlope_ConstantSlope_TooHigh)
     EXPECT_EQ(errors.size(), 0);
 }
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

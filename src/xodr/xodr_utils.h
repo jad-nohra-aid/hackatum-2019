@@ -3,7 +3,7 @@
 #include "xodr_map.h"
 #include "xodr_map_keys.h"
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 /**
  * @brief Loops over all (unordered) pairs of connected roads in the given XodrMap.
@@ -45,6 +45,6 @@ void forEachRoadLink(const XodrMap& map, F&& f);
 template <class RoadRoadF, class JunctionRoadF>
 void forEachRoadLink(const XodrMap& map, RoadRoadF&& roadRoadF, JunctionRoadF&& junctionRoadF);
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr
 
 #include "xodr_utils_impl.h"

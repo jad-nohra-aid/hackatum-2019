@@ -5,7 +5,7 @@
 #include "road_link.h"
 #include "lane_id.h"
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 /**
  * @brief A Junction describes the part of a roadmap where roads branch off into
@@ -235,4 +235,4 @@ class Junction
     std::vector<Connection> connections_;
 };
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

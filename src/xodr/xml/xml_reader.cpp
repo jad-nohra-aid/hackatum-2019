@@ -4,7 +4,7 @@
 #include <sstream>
 #include <vector>
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 XmlReader XmlReader::fromFile(const std::string& fileName)
 {
@@ -269,4 +269,4 @@ int XmlReader::getColumnNumber() const
     return curElement_->Column();
 }
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

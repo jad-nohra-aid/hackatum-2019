@@ -2,7 +2,7 @@
 
 #include <string>
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 class XodrMap;
 
@@ -23,4 +23,4 @@ class LinkValidationError
     virtual std::string description(const XodrMap& map) const = 0;
 };
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

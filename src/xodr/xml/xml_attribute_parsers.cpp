@@ -1,6 +1,6 @@
 #include "xml/xml_attribute_parsers.h"
 
-namespace aid { namespace sim { namespace xodr { namespace xml_parsers {
+namespace aid { namespace xodr { namespace xml_parsers {
 template <>
 int parseXmlAttrib<int>(const std::string& value)
 {
@@ -43,4 +43,4 @@ bool parseXmlAttrib<bool>(const std::string& value)
         throw std::invalid_argument(value);
     }
 }
-}}}}  // namespace aid::sim::xodr::xml_parsers
+}}}  // namespace aid::xodr::xml_parsers

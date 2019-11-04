@@ -4,7 +4,7 @@
 
 #include "../test_config.h"
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 bool intersectingGeometryViolationEquals(const IntersectingGeometryViolation& a, const IntersectingGeometryViolation& b)
 {
@@ -98,4 +98,4 @@ TEST(LaneBoundaryIntersectionValidationTest, testValidateRoundabout)
     }
 }
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

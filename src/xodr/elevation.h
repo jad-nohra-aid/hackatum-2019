@@ -7,7 +7,7 @@
 
 #include <vector>
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 /**
  * @brief The elevation profile of a road.
@@ -110,4 +110,4 @@ class ElevationProfile
     std::vector<Elevation> elevations_;
 };
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

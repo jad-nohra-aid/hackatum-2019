@@ -5,7 +5,7 @@
 #include "validation/lane_link_validation.h"
 #include "xodr_map.h"
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 /**
  * @brief Validates the road and lane links from the given road contact point.
@@ -373,4 +373,4 @@ std::string InconsistentJunctionPathDirectionsError::description(const XodrMap& 
     return desc.str();
 }
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

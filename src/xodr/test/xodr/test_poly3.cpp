@@ -2,7 +2,7 @@
 
 #include <gtest/gtest.h>
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 TEST(Poly3Test, testCtor)
 {
@@ -154,4 +154,4 @@ TEST(Poly3Test, testMinValueInInterval)
     EXPECT_NEAR(testPoly.minValueInInterval(1, 4), -13.4066, 0.0001);
 }
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

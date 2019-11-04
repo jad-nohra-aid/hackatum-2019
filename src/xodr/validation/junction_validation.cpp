@@ -4,7 +4,7 @@
 
 #include "xodr_map.h"
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 static bool junctionContainsRoad(const Junction& junction, int roadIdx);
 
@@ -60,4 +60,4 @@ static bool junctionContainsRoad(const Junction& junction, int roadIdx)
     return false;
 }
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr

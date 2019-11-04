@@ -5,7 +5,7 @@
 #include "xodr_map.h"
 #include "lane_section.h"
 
-namespace aid { namespace sim { namespace xodr {
+namespace aid { namespace xodr {
 
 bool RoadContactPointKey::operator==(const RoadContactPointKey& b) const
 {
@@ -49,4 +49,4 @@ std::string LaneSectionContactPointKey::toString(const XodrMap& map) const
     return ret.str();
 }
 
-}}}  // namespace aid::sim::xodr
+}}  // namespace aid::xodr
