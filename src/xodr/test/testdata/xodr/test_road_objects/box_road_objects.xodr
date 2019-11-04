@@ -1,0 +1,53 @@
+<?xml version="1.0" standalone="yes"?>
+<OpenDRIVE>
+    <header/>
+    <road name="" length="100" id="1" junction="-1">
+        <link>
+        </link>
+        <planView>
+            <geometry s="0" x="0" y="0" hdg="1.57079632679" length="100">
+                <arc curvature="-.01"/>
+            </geometry>
+        </planView>
+        <lateralProfile>
+        </lateralProfile>
+        <lanes>
+            <laneSection s="0">
+                <left>
+                    <lane id="1" type="driving" level= "false">
+                        <link>
+                        </link>
+                        <width sOffset="0" a="4" b="0" c="0" d="0"/>
+                        <roadMark sOffset="0" type="solid" weight="standard" color="standard" width=".13" laneChange="none" height=".02">
+                        </roadMark>
+                    </lane>
+                </left>
+                <center>
+                    <lane id="0" type="none" level= "false">
+                        <link>
+                        </link>
+                        <roadMark sOffset="0" type="broken" weight="standard" color="standard" width=".13" laneChange="both" height=".02">
+                        </roadMark>
+                    </lane>
+                </center>
+                <right>
+                    <lane id="-1" type="driving" level= "false">
+                        <link>
+                        </link>
+                        <width sOffset="0" a="4" b="0" c="0" d="0"/>
+                        <roadMark sOffset="0" type="solid" weight="standard" color="standard" width=".13" laneChange="none" height=".02">
+                        </roadMark>
+                    </lane>
+                </right>
+            </laneSection>
+        </lanes>
+        <objects>
+            <object type="obstacle" name="obstacle 1" id="1" s="1" t="-5" zOffset="0" validLength="2" orientation="none" length="2" width="1" height=".8" hdg="0" pitch="0" roll="0"/>
+            <object type="obstacle" name="obstacle 2" id="2" s="60" t="6" zOffset="0" validLength="2" orientation="none" length="2" width="3" height=".8" hdg="0.39269908169" pitch="0" roll="0"/>
+        </objects>
+        <signals>
+        </signals>
+        <surface>
+        </surface>
+    </road>
+</OpenDRIVE>

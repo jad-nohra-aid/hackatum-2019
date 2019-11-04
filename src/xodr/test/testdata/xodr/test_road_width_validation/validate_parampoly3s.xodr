@@ -1,0 +1,227 @@
+<?xml version="1.0" standalone="yes"?>
+<OpenDRIVE>
+    <header revMajor="1" revMinor="4" name="" version="1.00" north="0" south="0" east="0" west="0">
+    </header>
+    <road name="" length="20" id="1" junction="-1">
+        <planView>
+            <geometry s="0" x="0" y="0" hdg="0" length="20">
+                <paramPoly3 aU="0" aV="0" bU="10" bV="10" cU="0" cV="0" dU="0" dV="0" pRange="arcLength" />
+            </geometry>
+        </planView>
+        <lateralProfile>
+        </lateralProfile>
+        <lanes>
+            <laneSection s="0">
+                <left>
+                    <lane id="2" type="sidewalk" level= "false">
+                        <link>
+                            <successor id="2"/>
+                        </link>
+                        <width sOffset="0" a="6" b="0" c="0" d="0"/>
+                    </lane>
+                    <lane id="1" type="driving" level= "false">
+                        <link>
+                            <successor id="1"/>
+                        </link>
+                        <width sOffset="0" a="6" b="0" c="0" d="0"/>
+                    </lane>
+                </left>
+                <center>
+                    <lane id="0" type="none" level= "false">
+                        <link>
+                            <successor id="0"/>
+                        </link>
+                    </lane>
+                </center>
+                <right>
+                    <lane id="-1" type="driving" level= "false">
+                        <link>
+                            <successor id="-1"/>
+                        </link>
+                        <width sOffset="0" a="6" b="0" c="0" d="0"/>
+                    </lane>
+                    <lane id="-2" type="sidewalk" level= "false">
+                        <link>
+                            <successor id="-2"/>
+                        </link>
+                        <width sOffset="0" a="6" b="0" c="0" d="0"/>
+                    </lane>
+                </right>
+            </laneSection>
+        </lanes>
+    </road>
+    <road name="" length="20" id="2" junction="-1">
+        <planView>
+            <geometry s="0" x="50" y="0" hdg="0" length="20">
+                <paramPoly3 aU="5" aV="3" bU="0" bV="1" cU="0" cV="0" dU="0.01" dV="0" pRange="arcLength" />
+            </geometry>
+        </planView>
+        <lateralProfile>
+        </lateralProfile>
+        <lanes>
+            <laneSection s="0">
+                <left>
+                    <lane id="1" type="driving" level= "false">
+                        <link>
+                            <successor id="1"/>
+                        </link>
+                        <width sOffset="0" a="0.5" b="0" c="0" d="0"/>
+                    </lane>
+                </left>
+                <center>
+                    <lane id="0" type="none" level= "false">
+                        <link>
+                            <successor id="0"/>
+                        </link>
+                    </lane>
+                </center>
+                <right>
+                    <lane id="-1" type="driving" level= "false">
+                        <link>
+                            <successor id="-1"/>
+                        </link>
+                        <width sOffset="0" a="1.0" b="0" c="0" d="0"/>
+                    </lane>
+                </right>
+            </laneSection>
+        </lanes>
+    </road>
+    <road name="" length="20" id="3" junction="-1">
+        <planView>
+            <geometry s="0" x="50" y="0" hdg="0" length="20">
+                <paramPoly3 aU="5" aV="3" bU="0" bV="1" cU="0" cV="0" dU="0.01" dV="0" pRange="arcLength" />
+            </geometry>
+        </planView>
+        <lateralProfile>
+        </lateralProfile>
+        <lanes>
+            <laneSection s="0">
+                <left>
+                    <lane id="1" type="driving" level= "false">
+                        <link>
+                            <successor id="1"/>
+                        </link>
+                        <width sOffset="0" a="10" b="0" c="0" d="0"/>
+                    </lane>
+                </left>
+                <center>
+                    <lane id="0" type="none" level= "false">
+                        <link>
+                            <successor id="0"/>
+                        </link>
+                    </lane>
+                </center>
+                <right>
+                    <lane id="-1" type="driving" level= "false">
+                        <link>
+                            <successor id="-1"/>
+                        </link>
+                        <width sOffset="0" a="10" b="0" c="0" d="0"/>
+                    </lane>
+                </right>
+            </laneSection>
+        </lanes>
+    </road>
+    <road name="" length="20" id="4" junction="-1">
+        <planView>
+            <geometry s="0" x="50" y="0" hdg="0" length="20">
+                <paramPoly3 aU="5" aV="3" bU="0" bV="1" cU="0" cV="0" dU="-0.01" dV="0" pRange="arcLength" />
+            </geometry>
+        </planView>
+        <lateralProfile>
+        </lateralProfile>
+        <lanes>
+            <laneSection s="0">
+                <left>
+                    <lane id="1" type="driving" level= "false">
+                        <link>
+                            <successor id="1"/>
+                        </link>
+                        <width sOffset="0" a="3" b="0" c="0" d="0"/>
+                    </lane>
+                </left>
+                <center>
+                    <lane id="0" type="none" level= "false">
+                        <link>
+                            <successor id="0"/>
+                        </link>
+                    </lane>
+                </center>
+                <right>
+                    <lane id="-1" type="driving" level= "false">
+                        <link>
+                            <successor id="-1"/>
+                        </link>
+                        <width sOffset="0" a="3" b="0" c="0" d="0"/>
+                    </lane>
+                </right>
+            </laneSection>
+        </lanes>
+    </road>
+    <road name="" length="20" id="5" junction="-1">
+        <planView>
+            <geometry s="0" x="50" y="0" hdg="0" length="20">
+                <paramPoly3 aU="5" aV="3" bU="0" bV="1" cU="0" cV="0" dU="-0.01" dV="0" pRange="arcLength" />
+            </geometry>
+        </planView>
+        <lateralProfile>
+        </lateralProfile>
+        <lanes>
+            <laneSection s="0">
+                <left>
+                    <lane id="1" type="driving" level= "false">
+                        <link>
+                            <successor id="1"/>
+                        </link>
+                        <width sOffset="0" a="10" b="0" c="0" d="0"/>
+                    </lane>
+                </left>
+                <center>
+                    <lane id="0" type="none" level= "false">
+                        <link>
+                            <successor id="0"/>
+                        </link>
+                    </lane>
+                </center>
+                <right>
+                    <lane id="-1" type="driving" level= "false">
+                        <link>
+                            <successor id="-1"/>
+                        </link>
+                        <width sOffset="0" a="10" b="0" c="0" d="0"/>
+                    </lane>
+                </right>
+            </laneSection>
+        </lanes>
+    </road>
+    <road id="6" junction="-1" length="15.8408202221" name="">
+        <planView>
+            <geometry hdg="-1.17062175437" length="15.8408202221" s="0" x="0" y="0">
+                <paramPoly3 aU="0" aV="0" bU="14.9373582825" bV="0.0" cU="7.55386975571" cV="14.2104433576" dU="-7.55943080436" dV="-13.8050306198" />
+            </geometry>
+        </planView>
+        <elevationProfile>
+            <elevation a="196.81749796" b="0.0152881752716" c="0" d="0" s="0"/>
+        </elevationProfile>
+        <lanes>
+            <laneSection s="0">
+                <center>
+                    <lane id="0" level="false" type="driving">
+                        <roadMark color="standard" sOffset="0" type="none" weight="standard" width="0.0"/>
+                    </lane>
+                </center>
+                <right>
+                    <lane id="-1" level="false" type="driving">
+                        <link>
+                            <predecessor id="-1"/>
+                            <successor id="-1"/>
+                        </link>
+                        <width a="3.91276" b="0.564973901259" c="0" d="0" sOffset="0"/>
+                        <roadMark color="standard" sOffset="0" type="none" weight="standard" width="0.0"/>
+                    </lane>
+                </right>
+            </laneSection>
+        </lanes>
+        <signals/>
+    </road>
+</OpenDRIVE>

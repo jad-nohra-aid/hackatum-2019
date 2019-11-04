@@ -1,0 +1,749 @@
+<?xml version="1.0" standalone="yes"?>
+<OpenDRIVE>
+    <header revMajor="1" revMinor="4" name="" version="1.00" north="0" south="0" east="0" west="0">
+    </header>
+    <road name="west" length="40" id="1" junction="-1">
+        <link>
+            <successor elementType="junction" elementId="100" />
+        </link>
+        <planView>
+            <geometry s="0" x="-40" y="0" hdg="0" length="40">
+                <line/>
+            </geometry>
+        </planView>
+        <lateralProfile>
+        </lateralProfile>
+        <lanes>
+            <laneSection s="0">
+                <left>
+                    <lane id="2" type="sidewalk" level= "false">
+                        <link>
+                            <successor id="2"/>
+                        </link>
+                        <width sOffset="0" a="2" b="0" c="0" d="0"/>
+                    </lane>
+                    <lane id="1" type="driving" level= "false">
+                        <link>
+                            <successor id="1"/>
+                        </link>
+                        <width sOffset="0" a="4" b="0" c="0" d="0"/>
+                    </lane>
+                </left>
+                <center>
+                    <lane id="0" type="none" level= "false">
+                        <link>
+                        </link>
+                    </lane>
+                </center>
+                <right>
+                    <lane id="-1" type="driving" level= "false">
+                        <link>
+                            <successor id="-1"/>
+                        </link>
+                        <width sOffset="0" a="4" b="0" c="0" d="0"/>
+                    </lane>
+                    <lane id="-2" type="sidewalk" level= "false">
+                        <link>
+                            <successor id="-2"/>
+                        </link>
+                        <width sOffset="0" a="2" b="0" c="0" d="0"/>
+                    </lane>
+                </right>
+            </laneSection>
+            <laneSection s="10">
+                <left>
+                    <lane id="2" type="sidewalk" level= "false">
+                        <link>
+                            <predecessor id="2"/>
+                            <successor id="2"/>
+                        </link>
+                        <width sOffset="0" a="2" b="0" c="0" d="0"/>
+                    </lane>
+                    <lane id="1" type="driving" level= "false">
+                        <link>
+                            <predecessor id="1"/>
+                            <successor id="1"/>
+                        </link>
+                        <width sOffset="0" a="4" b="0" c="0" d="0"/>
+                    </lane>
+                </left>
+                <center>
+                    <lane id="0" type="none" level= "false">
+                        <link>
+                        </link>
+                    </lane>
+                </center>
+                <right>
+                    <lane id="-1" type="driving" level= "false">
+                        <link>
+                            <predecessor id="-1"/>
+                            <successor id="-1"/>
+                        </link>
+                        <width sOffset="0" a="4" b="0" c="0" d="0"/>
+                    </lane>
+                    <lane id="-2" type="sidewalk" level= "false">
+                        <link>
+                            <predecessor id="-2"/>
+                            <successor id="-2"/>
+                        </link>
+                        <width sOffset="0" a="2" b="0" c="0" d="0"/>
+                    </lane>
+                </right>
+            </laneSection>
+            <laneSection s="30">
+                <left>
+                    <lane id="2" type="sidewalk" level= "false">
+                        <link>
+                            <predecessor id="2"/>
+                        </link>
+                        <width sOffset="0" a="2" b="0" c="0" d="0"/>
+                    </lane>
+                    <lane id="1" type="driving" level= "false">
+                        <link>
+                            <predecessor id="1"/>
+                        </link>
+                        <width sOffset="0" a="4" b="0" c="0" d="0"/>
+                    </lane>
+                </left>
+                <center>
+                    <lane id="0" type="none" level= "false">
+                        <link>
+                        </link>
+                    </lane>
+                </center>
+                <right>
+                    <lane id="-1" type="driving" level= "false">
+                        <link>
+                            <predecessor id="-1"/>
+                        </link>
+                        <width sOffset="0" a="4" b="0" c="0" d="0"/>
+                    </lane>
+                    <lane id="-2" type="sidewalk" level= "false">
+                        <link>
+                            <predecessor id="-2"/>
+                        </link>
+                        <width sOffset="0" a="2" b="0" c="0" d="0"/>
+                    </lane>
+                </right>
+            </laneSection>
+        </lanes>
+    </road>
+    <road name="junction straight - left lanes" length="40" id="2" junction="100">
+        <link>
+            <predecessor elementType="road" elementId="1" contactPoint="end" />
+            <successor elementType="road" elementId="6" contactPoint="start" />
+        </link>
+        <planView>
+            <geometry s="0" x="0" y="0" hdg="0" length="40">
+                <line/>
+            </geometry>
+        </planView>
+        <lanes>
+            <laneSection s="0">
+                <left>
+                    <lane id="2" type="sidewalk" level= "false">
+                        <link>
+                            <predecessor id="2"/>
+                            <successor id="2"/>
+                        </link>
+                        <width sOffset="0" a="2" b="0" c="0" d="0"/>
+                    </lane>
+                    <lane id="1" type="driving" level= "false">
+                        <link>
+                            <predecessor id="1"/>
+                            <successor id="1"/>
+                        </link>
+                        <width sOffset="0" a="4" b="0" c="0" d="0"/>
+                    </lane>
+                </left>
+                <center>
+                    <lane id="0" type="none" level= "false">
+                        <link>
+                        </link>
+                    </lane>
+                </center>
+            </laneSection>
+            <laneSection s="10">
+                <left>
+                    <lane id="2" type="sidewalk" level= "false">
+                        <link>
+                            <predecessor id="2"/>
+                            <successor id="2"/>
+                        </link>
+                        <width sOffset="0" a="2" b="0" c="0" d="0"/>
+                    </lane>
+                    <lane id="1" type="driving" level= "false">
+                        <link>
+                            <predecessor id="1"/>
+                            <successor id="1"/>
+                        </link>
+                        <width sOffset="0" a="4" b="0" c="0" d="0"/>
+                    </lane>
+                </left>
+                <center>
+                    <lane id="0" type="none" level= "false">
+                        <link>
+                        </link>
+                    </lane>
+                </center>
+            </laneSection>
+            <laneSection s="30">
+                <left>
+                    <lane id="2" type="sidewalk" level= "false">
+                        <link>
+                            <predecessor id="2"/>
+                            <successor id="2"/>
+                        </link>
+                        <width sOffset="0" a="2" b="0" c="0" d="0"/>
+                    </lane>
+                    <lane id="1" type="driving" level= "false">
+                        <link>
+                            <predecessor id="1"/>
+                            <successor id="1"/>
+                        </link>
+                        <width sOffset="0" a="4" b="0" c="0" d="0"/>
+                    </lane>
+                </left>
+                <center>
+                    <lane id="0" type="none" level= "false">
+                        <link>
+                        </link>
+                    </lane>
+                </center>
+            </laneSection>
+        </lanes>
+    </road>
+    <road name="junction straight - right lanes" length="40" id="3" junction="100">
+        <link>
+            <predecessor elementType="road" elementId="1" contactPoint="end" />
+            <successor elementType="road" elementId="6" contactPoint="start" />
+        </link>
+        <planView>
+            <geometry s="0" x="0" y="0" hdg="0" length="40">
+                <line/>
+            </geometry>
+        </planView>
+        <lanes>
+            <laneSection s="0">
+                <center>
+                    <lane id="0" type="none" level= "false">
+                        <link>
+                        </link>
+                    </lane>
+                </center>
+                <right>
+                    <lane id="-1" type="driving" level= "false">
+                        <link>
+                            <predecessor id="-1"/>
+                            <successor id="-1"/>
+                        </link>
+                        <width sOffset="0" a="4" b="0" c="0" d="0"/>
+                    </lane>
+                    <lane id="-2" type="sidewalk" level= "false">
+                        <link>
+                            <predecessor id="-2"/>
+                            <successor id="-2"/>
+                        </link>
+                        <width sOffset="0" a="2" b="0" c="0" d="0"/>
+                    </lane>
+                </right>
+            </laneSection>
+            <laneSection s="10">
+                <center>
+                    <lane id="0" type="none" level= "false">
+                        <link>
+                        </link>
+                    </lane>
+                </center>
+                <right>
+                    <lane id="-1" type="driving" level= "false">
+                        <link>
+                            <predecessor id="-1"/>
+                            <successor id="-1"/>
+                        </link>
+                        <width sOffset="0" a="4" b="0" c="0" d="0"/>
+                    </lane>
+                    <lane id="-2" type="sidewalk" level= "false">
+                        <link>
+                            <predecessor id="-2"/>
+                            <successor id="-2"/>
+                        </link>
+                        <width sOffset="0" a="2" b="0" c="0" d="0"/>
+                    </lane>
+                </right>
+            </laneSection>
+            <laneSection s="30">
+                <center>
+                    <lane id="0" type="none" level= "false">
+                        <link>
+                        </link>
+                    </lane>
+                </center>
+                <right>
+                    <lane id="-1" type="driving" level= "false">
+                        <link>
+                            <predecessor id="-1"/>
+                            <successor id="-1"/>
+                        </link>
+                        <width sOffset="0" a="4" b="0" c="0" d="0"/>
+                    </lane>
+                    <lane id="-2" type="sidewalk" level= "false">
+                        <link>
+                            <predecessor id="-2"/>
+                            <successor id="-2"/>
+                        </link>
+                        <width sOffset="0" a="2" b="0" c="0" d="0"/>
+                    </lane>
+                </right>
+            </laneSection>
+        </lanes>
+    </road>
+    <road name="junction arc - left lanes" length="31.41592" id="4" junction="100">
+        <link>
+            <predecessor elementType="road" elementId="1" contactPoint="end" />
+            <successor elementType="road" elementId="7" contactPoint="start" />
+        </link>
+        <planView>
+            <geometry s="0" x="0" y="0" hdg="0" length="31.41592">
+                <arc curvature=".05"/>
+            </geometry>
+        </planView>
+        <lanes>
+            <laneSection s="0">
+                <left>
+                    <lane id="2" type="sidewalk" level= "false">
+                        <link>
+                            <predecessor id="2"/>
+                            <successor id="2"/>
+                        </link>
+                        <width sOffset="0" a="2" b="0" c="0" d="0"/>
+                    </lane>
+                    <lane id="1" type="driving" level= "false">
+                        <link>
+                            <predecessor id="1"/>
+                            <successor id="1"/>
+                        </link>
+                        <width sOffset="0" a="4" b="0" c="0" d="0"/>
+                    </lane>
+                </left>
+                <center>
+                    <lane id="0" type="none" level= "false">
+                        <link>
+                        </link>
+                    </lane>
+                </center>
+            </laneSection>
+            <laneSection s="10">
+                <left>
+                    <lane id="2" type="sidewalk" level= "false">
+                        <link>
+                            <predecessor id="2"/>
+                            <successor id="2"/>
+                        </link>
+                        <width sOffset="0" a="2" b="0" c="0" d="0"/>
+                    </lane>
+                    <lane id="1" type="driving" level= "false">
+                        <link>
+                            <predecessor id="1"/>
+                            <successor id="1"/>
+                        </link>
+                        <width sOffset="0" a="4" b="0" c="0" d="0"/>
+                    </lane>
+                </left>
+                <center>
+                    <lane id="0" type="none" level= "false">
+                        <link>
+                        </link>
+                    </lane>
+                </center>
+            </laneSection>
+            <laneSection s="30">
+                <left>
+                    <lane id="2" type="sidewalk" level= "false">
+                        <link>
+                            <predecessor id="2"/>
+                            <successor id="2"/>
+                        </link>
+                        <width sOffset="0" a="2" b="0" c="0" d="0"/>
+                    </lane>
+                    <lane id="1" type="driving" level= "false">
+                        <link>
+                            <predecessor id="1"/>
+                            <successor id="1"/>
+                        </link>
+                        <width sOffset="0" a="4" b="0" c="0" d="0"/>
+                    </lane>
+                </left>
+                <center>
+                    <lane id="0" type="none" level= "false">
+                        <link>
+                        </link>
+                    </lane>
+                </center>
+            </laneSection>
+        </lanes>
+    </road>
+    <road name="junction arc - right lanes" length="31.41592" id="5" junction="100">
+        <link>
+            <predecessor elementType="road" elementId="1" contactPoint="end" />
+            <successor elementType="road" elementId="7" contactPoint="start" />
+        </link>
+        <planView>
+            <geometry s="0" x="0" y="0" hdg="0" length="31.41592">
+                <arc curvature=".05"/>
+            </geometry>
+        </planView>
+        <lanes>
+            <laneSection s="0">
+                <center>
+                    <lane id="0" type="none" level= "false">
+                        <link>
+                        </link>
+                    </lane>
+                </center>
+                <right>
+                    <lane id="-1" type="driving" level= "false">
+                        <link>
+                            <predecessor id="-1"/>
+                            <successor id="-1"/>
+                        </link>
+                        <width sOffset="0" a="4" b="0" c="0" d="0"/>
+                    </lane>
+                    <lane id="-2" type="sidewalk" level= "false">
+                        <link>
+                            <successor id="-2"/>
+                        </link>
+                        <width sOffset="0" a="2" b="0" c="0" d="0"/>
+                    </lane>
+                </right>
+            </laneSection>
+            <laneSection s="10">
+                <center>
+                    <lane id="0" type="none" level= "false">
+                        <link>
+                        </link>
+                    </lane>
+                </center>
+                <right>
+                    <lane id="-1" type="driving" level= "false">
+                        <link>
+                            <predecessor id="-1"/>
+                            <successor id="-1"/>
+                        </link>
+                        <width sOffset="0" a="4" b="0" c="0" d="0"/>
+                    </lane>
+                    <lane id="-2" type="sidewalk" level= "false">
+                        <link>
+                            <predecessor id="-2"/>
+                            <successor id="-2"/>
+                        </link>
+                        <width sOffset="0" a="2" b="0" c="0" d="0"/>
+                    </lane>
+                </right>
+            </laneSection>
+            <laneSection s="30">
+                <center>
+                    <lane id="0" type="none" level= "false">
+                        <link>
+                        </link>
+                    </lane>
+                </center>
+                <right>
+                    <lane id="-1" type="driving" level= "false">
+                        <link>
+                            <predecessor id="-1"/>
+                            <successor id="-1"/>
+                        </link>
+                        <width sOffset="0" a="4" b="0" c="0" d="0"/>
+                    </lane>
+                    <lane id="-2" type="sidewalk" level= "false">
+                        <link>
+                            <predecessor id="-2"/>
+                            <successor id="-2"/>
+                        </link>
+                        <width sOffset="0" a="2" b="0" c="0" d="0"/>
+                    </lane>
+                </right>
+            </laneSection>
+        </lanes>
+    </road>
+
+    <road name="east" length="40" id="6" junction="-1">
+        <link>
+            <predecessor elementType="junction" elementId="100" />
+        </link>
+        <planView>
+            <geometry s="0" x="40" y="0" hdg="0" length="40">
+                <line/>
+            </geometry>
+        </planView>
+        <lateralProfile>
+        </lateralProfile>
+        <lanes>
+            <laneSection s="0">
+                <left>
+                    <lane id="2" type="sidewalk" level= "false">
+                        <link>
+                            <successor id="2"/>
+                        </link>
+                        <width sOffset="0" a="2" b="0" c="0" d="0"/>
+                    </lane>
+                    <lane id="1" type="driving" level= "false">
+                        <link>
+                            <successor id="1"/>
+                        </link>
+                        <width sOffset="0" a="4" b="0" c="0" d="0"/>
+                    </lane>
+                </left>
+                <center>
+                    <lane id="0" type="none" level= "false">
+                        <link>
+                        </link>
+                    </lane>
+                </center>
+                <right>
+                    <lane id="-1" type="driving" level= "false">
+                        <link>
+                            <successor id="-1"/>
+                        </link>
+                        <width sOffset="0" a="4" b="0" c="0" d="0"/>
+                    </lane>
+                    <lane id="-2" type="sidewalk" level= "false">
+                        <link>
+                            <successor id="-2"/>
+                        </link>
+                        <width sOffset="0" a="2" b="0" c="0" d="0"/>
+                    </lane>
+                </right>
+            </laneSection>
+            <laneSection s="10">
+                <left>
+                    <lane id="2" type="sidewalk" level= "false">
+                        <link>
+                            <predecessor id="2"/>
+                            <successor id="2"/>
+                        </link>
+                        <width sOffset="0" a="2" b="0" c="0" d="0"/>
+                    </lane>
+                    <lane id="1" type="driving" level= "false">
+                        <link>
+                            <predecessor id="1"/>
+                            <successor id="1"/>
+                        </link>
+                        <width sOffset="0" a="4" b="0" c="0" d="0"/>
+                    </lane>
+                </left>
+                <center>
+                    <lane id="0" type="none" level= "false">
+                        <link>
+                        </link>
+                    </lane>
+                </center>
+                <right>
+                    <lane id="-1" type="driving" level= "false">
+                        <link>
+                            <predecessor id="-1"/>
+                            <successor id="-1"/>
+                        </link>
+                        <width sOffset="0" a="4" b="0" c="0" d="0"/>
+                    </lane>
+                    <lane id="-2" type="sidewalk" level= "false">
+                        <link>
+                            <predecessor id="-2"/>
+                            <successor id="-2"/>
+                        </link>
+                        <width sOffset="0" a="2" b="0" c="0" d="0"/>
+                    </lane>
+                </right>
+            </laneSection>
+            <laneSection s="30">
+                <left>
+                    <lane id="2" type="sidewalk" level= "false">
+                        <link>
+                            <predecessor id="2"/>
+                        </link>
+                        <width sOffset="0" a="2" b="0" c="0" d="0"/>
+                    </lane>
+                    <lane id="1" type="driving" level= "false">
+                        <link>
+                            <predecessor id="1"/>
+                        </link>
+                        <width sOffset="0" a="4" b="0" c="0" d="0"/>
+                    </lane>
+                </left>
+                <center>
+                    <lane id="0" type="none" level= "false">
+                        <link>
+                        </link>
+                    </lane>
+                </center>
+                <right>
+                    <lane id="-1" type="driving" level= "false">
+                        <link>
+                            <predecessor id="-1"/>
+                        </link>
+                        <width sOffset="0" a="4" b="0" c="0" d="0"/>
+                    </lane>
+                    <lane id="-2" type="sidewalk" level= "false">
+                        <link>
+                            <predecessor id="-2"/>
+                        </link>
+                        <width sOffset="0" a="2" b="0" c="0" d="0"/>
+                    </lane>
+                </right>
+            </laneSection>
+        </lanes>
+    </road>
+
+    <road name="north" length="40" id="7" junction="-1">
+        <link>
+            <predecessor elementType="junction" elementId="100" />
+        </link>
+        <planView>
+            <geometry s="0" x="20" y="20" hdg="1.57079632679" length="40">
+                <line/>
+            </geometry>
+        </planView>
+        <lateralProfile>
+        </lateralProfile>
+        <lanes>
+            <laneSection s="0">
+                <left>
+                    <lane id="2" type="sidewalk" level= "false">
+                        <link>
+                            <successor id="2"/>
+                        </link>
+                        <width sOffset="0" a="2" b="0" c="0" d="0"/>
+                    </lane>
+                    <lane id="1" type="driving" level= "false">
+                        <link>
+                            <successor id="1"/>
+                        </link>
+                        <width sOffset="0" a="4" b="0" c="0" d="0"/>
+                    </lane>
+                </left>
+                <center>
+                    <lane id="0" type="none" level= "false">
+                        <link>
+                        </link>
+                    </lane>
+                </center>
+                <right>
+                    <lane id="-1" type="driving" level= "false">
+                        <link>
+                            <successor id="-1"/>
+                        </link>
+                        <width sOffset="0" a="4" b="0" c="0" d="0"/>
+                    </lane>
+                    <lane id="-2" type="sidewalk" level= "false">
+                        <link>
+                            <successor id="-2"/>
+                        </link>
+                        <width sOffset="0" a="2" b="0" c="0" d="0"/>
+                    </lane>
+                </right>
+            </laneSection>
+            <laneSection s="10">
+                <left>
+                    <lane id="2" type="sidewalk" level= "false">
+                        <link>
+                            <predecessor id="2"/>
+                            <successor id="2"/>
+                        </link>
+                        <width sOffset="0" a="2" b="0" c="0" d="0"/>
+                    </lane>
+                    <lane id="1" type="driving" level= "false">
+                        <link>
+                            <predecessor id="1"/>
+                            <successor id="1"/>
+                        </link>
+                        <width sOffset="0" a="4" b="0" c="0" d="0"/>
+                    </lane>
+                </left>
+                <center>
+                    <lane id="0" type="none" level= "false">
+                        <link>
+                        </link>
+                    </lane>
+                </center>
+                <right>
+                    <lane id="-1" type="driving" level= "false">
+                        <link>
+                            <predecessor id="-1"/>
+                            <successor id="-1"/>
+                        </link>
+                        <width sOffset="0" a="4" b="0" c="0" d="0"/>
+                    </lane>
+                    <lane id="-2" type="sidewalk" level= "false">
+                        <link>
+                            <predecessor id="-2"/>
+                            <successor id="-2"/>
+                        </link>
+                        <width sOffset="0" a="2" b="0" c="0" d="0"/>
+                    </lane>
+                </right>
+            </laneSection>
+            <laneSection s="30">
+                <left>
+                    <lane id="2" type="sidewalk" level= "false">
+                        <link>
+                            <predecessor id="2"/>
+                        </link>
+                        <width sOffset="0" a="2" b="0" c="0" d="0"/>
+                    </lane>
+                    <lane id="1" type="driving" level= "false">
+                        <link>
+                            <predecessor id="1"/>
+                        </link>
+                        <width sOffset="0" a="4" b="0" c="0" d="0"/>
+                    </lane>
+                </left>
+                <center>
+                    <lane id="0" type="none" level= "false">
+                        <link>
+                        </link>
+                    </lane>
+                </center>
+                <right>
+                    <lane id="-1" type="driving" level= "false">
+                        <link>
+                            <predecessor id="-1"/>
+                        </link>
+                        <width sOffset="0" a="4" b="0" c="0" d="0"/>
+                    </lane>
+                    <lane id="-2" type="sidewalk" level= "false">
+                        <link>
+                            <predecessor id="-2"/>
+                        </link>
+                        <width sOffset="0" a="2" b="0" c="0" d="0"/>
+                    </lane>
+                </right>
+            </laneSection>
+        </lanes>
+    </road>
+
+    <junction name="" id="100">
+        <!-- straight - left lanes -->
+        <connection id="1" incomingRoad="6" connectingRoad="2" contactPoint="end">
+            <laneLink from="1" to="1"/>
+            <laneLink from="2" to="2"/>
+        </connection>
+
+        <!-- straight - right lanes -->
+        <connection id="2" incomingRoad="1" connectingRoad="3" contactPoint="start">
+            <laneLink from="-1" to="-1"/>
+            <laneLink from="-2" to="-2"/>
+        </connection>
+
+        <!-- arc - left lanes -->
+        <connection id="3" incomingRoad="7" connectingRoad="4" contactPoint="end">
+            <laneLink from="1" to="1"/>
+            <laneLink from="2" to="2"/>
+        </connection>
+
+        <!-- arc - right lanes -->
+        <connection id="4" incomingRoad="1" connectingRoad="5" contactPoint="start">
+            <laneLink from="-1" to="-1"/>
+        </connection>
+    </junction>
+</OpenDRIVE>

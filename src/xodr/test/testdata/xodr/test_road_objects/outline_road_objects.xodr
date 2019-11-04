@@ -1,0 +1,66 @@
+<?xml version="1.0" standalone="yes"?>
+<OpenDRIVE>
+    <header/>
+    <road name="" length="100" id="1" junction="-1">
+        <link>
+        </link>
+        <planView>
+            <geometry s="0" x="0" y="0" hdg="1.57079632679" length="100">
+                <arc curvature="-.01"/>
+            </geometry>
+        </planView>
+        <lateralProfile>
+        </lateralProfile>
+        <lanes>
+            <laneSection s="0">
+                <left>
+                    <lane id="1" type="driving" level= "false">
+                        <link>
+                        </link>
+                        <width sOffset="0" a="4" b="0" c="0" d="0"/>
+                        <roadMark sOffset="0" type="solid" weight="standard" color="standard" width=".13" laneChange="none" height=".02">
+                        </roadMark>
+                    </lane>
+                </left>
+                <center>
+                    <lane id="0" type="none" level= "false">
+                        <link>
+                        </link>
+                        <roadMark sOffset="0" type="broken" weight="standard" color="standard" width=".13" laneChange="both" height=".02">
+                        </roadMark>
+                    </lane>
+                </center>
+                <right>
+                    <lane id="-1" type="driving" level= "false">
+                        <link>
+                        </link>
+                        <width sOffset="0" a="4" b="0" c="0" d="0"/>
+                        <roadMark sOffset="0" type="solid" weight="standard" color="standard" width=".13" laneChange="none" height=".02">
+                        </roadMark>
+                    </lane>
+                </right>
+            </laneSection>
+        </lanes>
+        <objects>
+            <object type="obstacle" name="obstacle 1" id="1" s="1" t="-5" zOffset="0" validLength="2" orientation="none" hdg="0" pitch="0" roll="0">
+                <outline>
+                    <cornerRoad s="0" t="-6" dz="0" height=".5"/>
+                    <cornerRoad s="25" t="-6" dz="0" height=".5"/>
+                    <cornerRoad s="50" t="-6" dz="0" height=".5"/>
+                    <cornerRoad s="75" t="-6" dz="0" height=".5"/>
+                    <cornerRoad s="100" t="-6" dz="0" height=".5"/>
+
+                    <cornerRoad s="100" t="-8" dz="0" height=".5"/>
+                    <cornerRoad s="75" t="-8" dz="0" height=".5"/>
+                    <cornerRoad s="50" t="-8" dz="0" height=".5"/>
+                    <cornerRoad s="25" t="-8" dz="0" height=".5"/>
+                    <cornerRoad s="0" t="-8" dz="0" height=".5"/>
+                </outline>
+            </object>
+        </objects>
+        <signals>
+        </signals>
+        <surface>
+        </surface>
+    </road>
+</OpenDRIVE>
