@@ -22,15 +22,25 @@ struct XodrFileInfo
 };
 
 static const XodrFileInfo xodrFiles[] = {
-    {"Crossing8Course", "/home/vanderli/Work/HackaTUM/hackatum-2019/data/opendrive/Crossing8Course.xodr"},
-    {"CulDeSac", "/home/vanderli/Work/HackaTUM/hackatum-2019/data/opendrive/CulDeSac.xodr"},
-    {"Roundabout8Course", "/home/vanderli/Work/HackaTUM/hackatum-2019/data/opendrive/Roundabout8Course.xodr"},
-    {"sample1.1", "/home/vanderli/Work/HackaTUM/hackatum-2019/data/opendrive/sample1.1.xodr"},
+    {"Crossing8Course", "data/opendrive/Crossing8Course.xodr"},
+    {"CulDeSac", "data/opendrive/CulDeSac.xodr"},
+    {"Roundabout8Course", "data/opendrive/Roundabout8Course.xodr"},
+    {"sample1.1", "data/opendrive/sample1.1.xodr"},
 };
 
+/**
+ * @brief The view which is shown inside the main area's QScrollArea.
+ *
+ * This view renders the XodrMap specified using the setMap function.
+ */
 class XodrViewerWindow::XodrView : public QWidget
 {
   public:
+	/**
+	 * @brief Constructs a new XodrView.
+	 *
+	 * @param parent        The parent widget.
+	 */
     XodrView(QWidget* parent = nullptr) : QWidget(parent) {}
 
     void setMap(std::unique_ptr<XodrMap>&& xodrMap);
@@ -38,11 +48,22 @@ class XodrViewerWindow::XodrView : public QWidget
     virtual void paintEvent(QPaintEvent* evnt) override;
 
   private:
-    QPointF vecToQPointF(const Eigen::Vector2d pt) const;
+	/**
+	 * @brief Converts a point form XODR map coordinates to view coordinates.
+	 *
+	 * @param pt            The point in map coordinates.
+	 * @return              The point in view coordinates.
+	 */
+    QPointF pointMapToView(const Eigen::Vector2d pt) const;
 
     std::unique_ptr<XodrMap> xodrMap_;
 
-    Eigen::Vector2d drawOffset_;
+    /**
+     * @brief The offset used in the pointMapToView function.
+     *
+     * See the pointMapToView function for the exact meaning of it.
+     */
+    Eigen::Vector2d mapToViewOffset_;
 };
 
 XodrViewerWindow::XodrViewerWindow()
@@ -103,6 +124,9 @@ void XodrViewerWindow::XodrView::setMap(std::unique_ptr<XodrMap>&& xodrMap)
     BoundingRect boundingRect = xodrMapApproxBoundingRect(*xodrMap_);
 
     Eigen::Vector2d diag = boundingRect.max_ - boundingRect.min_;
+
+    // Compute the size big enough for the bounding rectangle, scaled by
+    // DRAW_SCALE, and with margins of size DRAW_MARGIN on all sides.
     QSize size(static_cast<int>(std::ceil(diag.x() * DRAW_SCALE + 2 * DRAW_MARGIN)),
                static_cast<int>(std::ceil(diag.y() * DRAW_SCALE + 2 * DRAW_MARGIN)));
     resize(size);
@@ -130,7 +154,7 @@ void XodrViewerWindow::XodrView::paintEvent(QPaintEvent*)
                 QVector<QPointF> qtPoints;
                 for (Eigen::Vector2d pt : boundary.vertices_)
                 {
-                    qtPoints.append(vecToQPointF(pt));
+                    qtPoints.append(pointMapToView(pt));
                 }
                 painter.drawPolyline(qtPoints);
             }
@@ -138,9 +162,12 @@ void XodrViewerWindow::XodrView::paintEvent(QPaintEvent*)
     }
 }
 
-QPointF XodrViewerWindow::XodrView::vecToQPointF(const Eigen::Vector2d pt) const
+QPointF XodrViewerWindow::XodrView::pointMapToView(const Eigen::Vector2d pt) const
 {
-    return QPointF(pt.x() * DRAW_SCALE + drawOffset_.x(), -pt.y() * DRAW_SCALE + drawOffset_.y());
+	// Scales the map point by DRAW_SCALE, flips the y axis, then applies
+	// mapToViewOffset_, which is computes such that it shifts the view space
+	// bounding rectangle to have margins of DRAW_MARGIN on all sides.
+    return QPointF(pt.x() * DRAW_SCALE + mapToViewOffset_.x(), -pt.y() * DRAW_SCALE + mapToViewOffset_.y());
 }
 
 }}  // namespace aid::xodr

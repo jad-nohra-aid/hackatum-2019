@@ -31,4 +31,10 @@ std::string XmlParseError::description() const
     return message.str();
 }
 
+bool XmlParseError::isFatal() const
+{
+	return category_ != Category::UNEXPECTED_ATTRIBUTE &&
+		category_ != Category::UNEXPECTED_CHILD_ELEMENT;
+}
+
 }}  // namespace aid::xodr

@@ -70,6 +70,11 @@ class XodrParseError
     /** @brief See XodrParseResult::hasValidGeometry to see the meaning of this check. */
     bool invalidatesConnectivity() const { return invalidations_ & XodrInvalidations::CONNECTIVITY; };
 
+    /**
+     * @return True if this is a fatal error, false otherwise.
+     */
+    bool isFatal() const;
+
   private:
     ErrorData data_;
     unsigned invalidations_;

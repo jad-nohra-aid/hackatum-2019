@@ -51,6 +51,11 @@ class XmlParseError
 
     std::string description() const;
 
+	/**
+     * @return True if this is a fatal error, false otherwise.
+     */
+    bool isFatal() const;
+
     Category category_;
     std::string name_;
     std::string value_;
@@ -133,6 +138,23 @@ class XmlParseResult
     std::vector<E>& errors() { return errors_; }
 
     const std::vector<E>& errors() const { return errors_; }
+
+    /**
+     * @return True if this XmlParseResult contains at least 1 fatal error,
+     * false otherwise.
+     */
+    bool hasFatalErrors() const
+	{
+    	for(const E& err : errors_)
+		{
+    		if(err.isFatal())
+			{
+    			return true;
+			}
+		}
+
+    	return false;
+	}
 
   protected:
     Value value_ = Value();
