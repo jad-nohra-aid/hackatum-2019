@@ -1187,8 +1187,6 @@
                 <line/>
             </geometry>
         </planView>
-        <elevationProfile>
-        </elevationProfile>
         <lateralProfile>
         </lateralProfile>
         <lanes>
@@ -1240,8 +1238,6 @@
                 <line/>
             </geometry>
         </planView>
-        <elevationProfile>
-        </elevationProfile>
         <lateralProfile>
         </lateralProfile>
         <lanes>
@@ -1293,8 +1289,6 @@
                 <line/>
             </geometry>
         </planView>
-        <elevationProfile>
-        </elevationProfile>
         <lateralProfile>
         </lateralProfile>
         <lanes>
@@ -1346,8 +1340,6 @@
                 <line/>
             </geometry>
         </planView>
-        <elevationProfile>
-        </elevationProfile>
         <lateralProfile>
         </lateralProfile>
         <lanes>

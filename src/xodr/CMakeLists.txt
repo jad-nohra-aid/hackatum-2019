@@ -9,8 +9,6 @@ find_package(GTest REQUIRED)
 
 include_directories(. ${EIGEN3_INCLUDE_DIR} ${GTEST_INCLUDE_DIRS})
 
-#find_package(Boost REQUIRED COMPONENTS optional)
-
 add_library(xodr
 	coordinate_conversion/coordinate_conversion.cpp
 	elevation.cpp

@@ -17,7 +17,7 @@ namespace aid { namespace xodr {
  * @brief A coordinate conversion from map coordinates using one projection to
  * map coordinates using another projection.
  *
- * The projection are specified in the proj.4 format.
+ * The projections are specified in the proj.4 format.
  */
 class CoordinateConversion
 {

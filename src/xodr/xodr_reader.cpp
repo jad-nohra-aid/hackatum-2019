@@ -17,6 +17,18 @@ std::string XodrParseError::description() const
     return boost::apply_visitor(XodrParseErrorDescriptionVisitor(), data_);
 }
 
+bool XodrParseError::isFatal() const
+{
+    struct Visitor : public boost::static_visitor<bool>
+    {
+        bool operator()(const XmlParseError& err) const { return err.isFatal(); }
+
+        bool operator()(const std::string& err) const { return true; }
+    };
+
+    return boost::apply_visitor(Visitor(), data_);
+}
+
 XodrReader XodrReader::fromFile(const std::string& fileName)
 {
     XodrReader ret;

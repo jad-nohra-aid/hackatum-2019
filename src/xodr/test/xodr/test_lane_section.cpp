@@ -348,31 +348,31 @@ INSTANTIATE_TEST_CASE_P(
                                    "</lane>"));
 
 INSTANTIATE_TEST_CASE_P(SpeedLimit, ValidateLaneAttribSOffsetTest,
-                         ::testing::Values<const char*>("<lane id='1' type='driving' level='false'>"
-                                                        "  <width sOffset='0' a='1.5' b='0' c='0' d='0'/>"
-                                                        "  <speed sOffset='%f' max='60' unit='km/h'/>"
-                                                        "  <speed sOffset='%f' max='120'/>"
-                                                        "</lane>"));
+                        ::testing::Values<const char*>("<lane id='1' type='driving' level='false'>"
+                                                       "  <width sOffset='0' a='1.5' b='0' c='0' d='0'/>"
+                                                       "  <speed sOffset='%f' max='60' unit='km/h'/>"
+                                                       "  <speed sOffset='%f' max='120'/>"
+                                                       "</lane>"));
 
 INSTANTIATE_TEST_CASE_P(Access, ValidateLaneAttribSOffsetTest,
-                         ::testing::Values<const char*>("<lane id='1' type='driving' level='false'>"
-                                                        "  <width sOffset='0' a='1.5' b='0' c='0' d='0'/>"
-                                                        "  <access sOffset='%f' restriction='pedestrian'/>"
-                                                        "  <access sOffset='%f' restriction='simulation'/>"
-                                                        "</lane>"));
+                        ::testing::Values<const char*>("<lane id='1' type='driving' level='false'>"
+                                                       "  <width sOffset='0' a='1.5' b='0' c='0' d='0'/>"
+                                                       "  <access sOffset='%f' restriction='pedestrian'/>"
+                                                       "  <access sOffset='%f' restriction='simulation'/>"
+                                                       "</lane>"));
 
 INSTANTIATE_TEST_CASE_P(Height, ValidateLaneAttribSOffsetTest,
-                         ::testing::Values<const char*>("<lane id='1' type='driving' level='false'>"
-                                                        "  <width sOffset='0' a='1.5' b='0' c='0' d='0'/>"
-                                                        "  <height sOffset='%f' inner='-1.25' outer='1.75'/>"
-                                                        "  <height sOffset='%f' inner='-1.15' outer='1.55'/>"
-                                                        "</lane>"));
+                        ::testing::Values<const char*>("<lane id='1' type='driving' level='false'>"
+                                                       "  <width sOffset='0' a='1.5' b='0' c='0' d='0'/>"
+                                                       "  <height sOffset='%f' inner='-1.25' outer='1.75'/>"
+                                                       "  <height sOffset='%f' inner='-1.15' outer='1.55'/>"
+                                                       "</lane>"));
 
 INSTANTIATE_TEST_CASE_P(Rule, ValidateLaneAttribSOffsetTest,
-                         ::testing::Values<const char*>("<lane id='1' type='driving' level='false'>"
-                                                        "  <width sOffset='0' a='1.5' b='0' c='0' d='0'/>"
-                                                        "  <rule sOffset='%f' value='no stopping at any time'/>"
-                                                        "  <rule sOffset='%f' value='I would turn back if I were you'/>"
-                                                        "</lane>"));
+                        ::testing::Values<const char*>("<lane id='1' type='driving' level='false'>"
+                                                       "  <width sOffset='0' a='1.5' b='0' c='0' d='0'/>"
+                                                       "  <rule sOffset='%f' value='no stopping at any time'/>"
+                                                       "  <rule sOffset='%f' value='I would turn back if I were you'/>"
+                                                       "</lane>"));
 
 }}  // namespace aid::xodr
