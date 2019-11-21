@@ -131,7 +131,7 @@ void XodrViewerWindow::XodrView::setMap(std::unique_ptr<XodrMap>&& xodrMap)
                static_cast<int>(std::ceil(diag.y() * DRAW_SCALE + 2 * DRAW_MARGIN)));
     resize(size);
 
-    drawOffset_ = Eigen::Vector2d(-boundingRect.min_.x() * DRAW_SCALE + DRAW_MARGIN,
+    mapToViewOffset_ = Eigen::Vector2d(-boundingRect.min_.x() * DRAW_SCALE + DRAW_MARGIN,
                                   boundingRect.max_.y() * DRAW_SCALE + DRAW_MARGIN);
 }
 
@@ -164,9 +164,9 @@ void XodrViewerWindow::XodrView::paintEvent(QPaintEvent*)
 
 QPointF XodrViewerWindow::XodrView::pointMapToView(const Eigen::Vector2d pt) const
 {
-	// Scales the map point by DRAW_SCALE, flips the y axis, then applies
-	// mapToViewOffset_, which is computes such that it shifts the view space
-	// bounding rectangle to have margins of DRAW_MARGIN on all sides.
+    // Scales the map point by DRAW_SCALE, flips the y axis, then applies
+    // mapToViewOffset_, which is computes such that it shifts the view space
+    // bounding rectangle to have margins of DRAW_MARGIN on all sides.
     return QPointF(pt.x() * DRAW_SCALE + mapToViewOffset_.x(), -pt.y() * DRAW_SCALE + mapToViewOffset_.y());
 }
 
