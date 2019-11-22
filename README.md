@@ -8,32 +8,21 @@ Although tesellation into polylines is provided, there is no support for convert
 
 ## Ubuntu
 
-
-1. Install GTest (full instructions [here]( https://www.eriksmistad.no/getting-started-with-google-test-on-ubuntu/))
-```
-sudo apt-get install libgtest-dev
-sudo apt-get install cmake
-cd /usr/src/gtest
-sudo cmake CMakeLists.txt
-sudo make
-sudo cp *.a /usr/lib
-```
-
-2. Install dependencies
+1. Install dependencies
 
 ```
 sudo apt-get install libeigen3-dev libtinyxml-dev qt5-default libboost-dev
 ```
 
-3. Clone and Build the project
+2. Clone and Build the project
 
 ```
-git clone https://github.com/jad-nohra-aid/hackatum-2019.git --recurse-submodules
+git clone --recurse-submodules https://github.com/jad-nohra-aid/hackatum-2019.git
 cd hackatum-2019
 make
 ```
 
-4. Make will start the viewer and load the files, you should see something like this:
+3. Make will start the viewer and load the files, you should see something like this:
 
 ![](./xodr_viewer.png)
 
