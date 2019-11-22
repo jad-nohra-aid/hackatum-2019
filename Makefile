@@ -1,5 +1,5 @@
 viewer: build
-	@./build/xodr_viewer/xodr_viewer
+	@$(CURDIR)/build/xodr_viewer/xodr_viewer
 
 .PHONY: build
 build:
@@ -11,4 +11,4 @@ clean:
 	@rm -rf build
 
 test: build
-	@./build/xodr/xodr_tests
+	@cd $(CURDIR)/src/xodr && $(CURDIR)/build/xodr/xodr_tests
