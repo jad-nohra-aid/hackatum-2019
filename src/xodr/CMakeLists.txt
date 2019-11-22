@@ -4,9 +4,6 @@ include(GoogleTest)
 
 find_package(Eigen3 REQUIRED)
 
-# https://www.eriksmistad.no/getting-started-with-google-test-on-ubuntu/
-find_package(GTest REQUIRED)
-
 include_directories(. ${EIGEN3_INCLUDE_DIR} ${GTEST_INCLUDE_DIRS})
 
 add_library(xodr
@@ -58,6 +55,4 @@ add_executable(xodr_tests
 	test/xodr/test_xodr_object_reference.cpp
 	test/xodr/test_xodr_utils.cpp)
 
-gtest_discover_tests(xodr_tests TEST_PREFIX new:)
-
-target_link_libraries(xodr_tests xodr ${GTEST_LIBRARIES} ${GTEST_MAIN_LIBRARIES} tinyxml proj pthread)
+target_link_libraries(xodr_tests xodr gtest_main gtest tinyxml proj pthread)
