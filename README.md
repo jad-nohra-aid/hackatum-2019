@@ -31,13 +31,7 @@ sudo apt-get install libeigen3-dev libtinyxml-dev qt5-default libboost-dev
 ```
 git clone https://github.com/jad-nohra-aid/hackatum-2019.git
 cd hackatum-2019
-cd src
-mkdir build
-cd build
-cmake ..
 make
-cd ../..
-src/build/xodr_viewer/xodr_viewer
 ```
 
 ## Windows
