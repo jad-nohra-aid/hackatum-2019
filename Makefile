@@ -4,7 +4,7 @@ viewer: build
 .PHONY: build
 build:
 	@mkdir -p build
-	@cmake -B build src
+	@cd build && cmake ../src
 	@cd build && make -j `nproc --all`
 
 clean:
