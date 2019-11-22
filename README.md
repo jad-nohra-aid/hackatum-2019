@@ -6,7 +6,6 @@ Although tesellation into polylines is provided, there is no support for convert
 
 # Setup
 
-
 ## Ubuntu
 
 
@@ -33,6 +32,11 @@ git clone https://github.com/jad-nohra-aid/hackatum-2019.git
 cd hackatum-2019
 make
 ```
+
+4. Make will start the viewer and load the files, you should see something like this:
+
+![](./xodr_viewer.png)
+
 
 ## Windows
 
