@@ -12,7 +12,7 @@
 
 namespace aid { namespace xodr {
 
-static constexpr float DRAW_SCALE = 4;
+static constexpr float DRAW_SCALE = 8;
 static constexpr float DRAW_MARGIN = 200;
 
 struct XodrFileInfo
@@ -135,6 +135,13 @@ void XodrViewerWindow::XodrView::setMap(std::unique_ptr<XodrMap>&& xodrMap)
                                   boundingRect.max_.y() * DRAW_SCALE + DRAW_MARGIN);
 }
 
+static bool showLaneType(LaneType laneType)
+{
+    return laneType == LaneType::DRIVING ||
+        laneType == LaneType::SIDEWALK ||
+        laneType == LaneType::BORDER;
+}
+
 void XodrViewerWindow::XodrView::paintEvent(QPaintEvent*)
 {
     QPainter painter(this);
@@ -148,9 +155,35 @@ void XodrViewerWindow::XodrView::paintEvent(QPaintEvent*)
 
             auto refLineTessellation = road.referenceLine().tessellate(laneSection.startS(), laneSection.endS());
             auto boundaries = laneSection.tessellateLaneBoundaryCurves(refLineTessellation);
+            const auto& lanes = laneSection.lanes();
 
-            for (const auto& boundary : boundaries)
+            for (size_t i = 0; i < boundaries.size(); i++)
             {
+                const LaneSection::BoundaryCurveTessellation& boundary = boundaries[i];
+
+                if(i == 0)
+                {
+                    if(!showLaneType(lanes[i].type()))
+                    {
+                        continue;
+                    }
+                }
+                else if(i == boundaries.size() - 1)
+                {
+                    if(!showLaneType(lanes[i - 1].type()))
+                    {
+                        continue;
+                    }
+                }
+                else
+                {
+                    if(!showLaneType(lanes[i - 1].type()) && 
+                        !showLaneType(lanes[i].type()))
+                    {
+                        continue;
+                    }
+                }
+
                 QVector<QPointF> qtPoints;
                 for (Eigen::Vector2d pt : boundary.vertices_)
                 {
