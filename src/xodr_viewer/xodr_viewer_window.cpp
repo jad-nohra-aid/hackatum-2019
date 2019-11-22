@@ -163,6 +163,9 @@ void XodrViewerWindow::XodrView::paintEvent(QPaintEvent*)
 
                 if(i == 0)
                 {
+                    // The left-most boundary. Only render it if the left-most 
+                    // lane is visible.
+
                     if(!showLaneType(lanes[i].type()))
                     {
                         continue;
@@ -170,6 +173,8 @@ void XodrViewerWindow::XodrView::paintEvent(QPaintEvent*)
                 }
                 else if(i == boundaries.size() - 1)
                 {
+                    // A boundary between two lanes. Render it if at least one
+                    // of the two adjacent lanes is visible.
                     if(!showLaneType(lanes[i - 1].type()))
                     {
                         continue;
@@ -177,6 +182,9 @@ void XodrViewerWindow::XodrView::paintEvent(QPaintEvent*)
                 }
                 else
                 {
+                    // The right-most boundary. Only render it if the right-most
+                    // lane is visible.
+
                     if(!showLaneType(lanes[i - 1].type()) && 
                         !showLaneType(lanes[i].type()))
                     {
