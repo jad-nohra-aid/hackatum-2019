@@ -10,7 +10,6 @@ find_package(GTest REQUIRED)
 include_directories(. ${EIGEN3_INCLUDE_DIR} ${GTEST_INCLUDE_DIRS})
 
 add_library(xodr
-	coordinate_conversion/coordinate_conversion.cpp
 	elevation.cpp
 	junction_parser.cpp
 	junction.cpp
@@ -40,7 +39,6 @@ add_library(xodr
 	xodr_reader.cpp)
 
 add_executable(xodr_tests
-	test/coordinate_conversion/test_coordinate_conversion.cpp
 	test/xml/test_xml_attribute_parsers.cpp
 	test/xml/test_xml_child_element_parsers.cpp
 	test/xml/test_xml_reader.cpp

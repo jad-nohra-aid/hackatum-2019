@@ -23,7 +23,7 @@ sudo cp *.a /usr/lib
 2. Install dependencies
 
 ```
-sudo apt-get install libeigen3-dev libproj-dev libtinyxml-dev qt5-default libboost-dev
+sudo apt-get install libeigen3-dev libtinyxml-dev qt5-default libboost-dev
 ```
 
 3. Clone and Build the project
