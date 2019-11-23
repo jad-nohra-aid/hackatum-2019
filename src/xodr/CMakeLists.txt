@@ -55,4 +55,4 @@ add_executable(xodr_tests
 	test/xodr/test_xodr_object_reference.cpp
 	test/xodr/test_xodr_utils.cpp)
 
-target_link_libraries(xodr_tests xodr gtest_main gtest tinyxml proj pthread)
+target_link_libraries(xodr_tests xodr gtest_main gtest tinyxml pthread)
